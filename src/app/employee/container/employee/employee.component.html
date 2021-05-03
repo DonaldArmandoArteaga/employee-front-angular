@@ -1,0 +1,6 @@
+<br>
+<mat-card>
+    <app-field-search (messageWithId)="getMessage($event)"></app-field-search>
+</mat-card>
+<br>
+<app-table-data [datasource$]="employee$ | async" [isLoading]="requestStatus"></app-table-data>
